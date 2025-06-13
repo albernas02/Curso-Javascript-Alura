@@ -86,3 +86,56 @@ class Atividade6 {
 }
 const atividade5 = new Atividade5();
 const atividade6 = new Atividade6();
+
+// Fim das Atividades aula 2.
+// Início das Atividades aula 3
+
+class Atividade7 {
+  constructor() {
+    let operacao;
+    let valor;
+    let saldo = 1000;
+  }
+  realizarOperacao(operacao, valor) {
+    if (operacao === "deposito") {
+      this.saldo += valor;
+      console.log(
+        `Depósito de R$${valor} realizado. Saldo atual: R$${this.saldo}`
+      );
+    } else if (operacao === "saque") {
+      if (valor <= this.saldo) {
+        this.saldo -= valor;
+        console.log(
+          `Saque de R$${valor} realizado. Saldo atual: R$${this.saldo}`
+        );
+      } else {
+        console.log("Saldo insuficiente para saque.");
+      }
+    } else {
+      console.log("Operação inválida.");
+    }
+  }
+  verificaridade() {
+    const pessoa = "Artur";
+    const idade = 18;
+    const podeEntrar = idade >= 18 ? "Pode Entrar" : "Não pode entrar";
+    console.log(
+      `${pessoa} tem ${idade} anos e ${
+        podeEntrar ? "pode" : "não pode"
+      } entrar na festa.`
+    );
+  }
+  verificaAdministrador() {
+    const usuario = "admin";
+    const senha = "1234";
+    const ehAdministrador = usuario === "admin" && senha === "1234";
+    const estaLogado = ehAdministrador
+      ? "Usuário é administrador e está logado."
+      : "Usuário não é administrador ou não está logado.";
+    console.log(estaLogado);}
+}
+
+const atividade7 = new Atividade7();
+atividade7.realizarOperacao("deposito", 200);
+atividade7.verificaridade();
+atividade7.verificaAdministrador();
