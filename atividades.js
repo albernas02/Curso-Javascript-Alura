@@ -139,3 +139,23 @@ const atividade7 = new Atividade7();
 atividade7.realizarOperacao("deposito", 200);
 atividade7.verificaridade();
 atividade7.verificaAdministrador();
+
+// Fim das Atividades aula 3.
+// Início das Atividades aula 4
+
+class Atividade8 {
+    static saudacao(nome) {
+        return `Olá, ${nome}!`;
+    }
+}
+
+const mensagem = Atividade8.saudacao("Artur");
+console.log(mensagem);
+
+class Atividade9 {
+    constructor() {
+        const mensagem = (nome) => "Olá, " + nome + "!";
+        console.log(mensagem("Artur"));
+    }
+}
+const escrever = new Atividade9("artur");
