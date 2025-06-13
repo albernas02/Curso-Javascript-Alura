@@ -9,9 +9,9 @@ class Atividade1e2 {
     let nomeCompleto2 = `${nome} ${sobrenome}`;
     let aux;
     if (estudante) {
-        aux = "SIM";
+      aux = "SIM";
     } else {
-        aux = "NÃO";
+      aux = "NÃO";
     }
 
     console.log("Nome:", nome);
@@ -28,28 +28,27 @@ class Atividade3 {
   configurar() {
     let numero1 = 10;
     let nome = "Artur";
-    let texto =
-      `Olá, meu nome ${nome} e eu tenho R$${numero1} reais no bolso.`;
+    let texto = `Olá, meu nome ${nome} e eu tenho R$${numero1} reais no bolso.`;
 
     console.log(texto);
   }
 }
-class Atividade4{
-    constructor() {}
-    variaveis(){
-        let variavel = "primeira declaração";
-        console.log(variavel);
-        variavel = "segunda declaração";
-        console.log(variavel);
+class Atividade4 {
+  constructor() {}
+  variaveis() {
+    let variavel = "primeira declaração";
+    console.log(variavel);
+    variavel = "segunda declaração";
+    console.log(variavel);
+  }
+  chuva() {
+    let chuva = true;
+    if (chuva) {
+      console.log("Está chovendo, pegue o guarda-chuva!");
+    } else {
+      console.log("Não está chovendo, você pode sair sem guarda-chuva.");
     }
-    chuva(){
-        let chuva = true;
-        if (chuva) {
-            console.log("Está chovendo, pegue o guarda-chuva!");
-        } else {
-            console.log("Não está chovendo, você pode sair sem guarda-chuva.");
-        }
-    }
+  }
 }
 
 const atividade1 = new Atividade1e2();
@@ -62,3 +61,28 @@ atividade4.variaveis();
 atividade4.chuva();
 
 // Fim das Atividades aula 1.
+
+// Início das Atividades aula 2
+
+class Atividade5 {
+  constructor() {
+    const texto = "Olá, mundo!";
+    const tamanho = texto.length;
+    console.log(`O texto "${texto}" tem ${tamanho} caracteres.`);
+    console.log(`O texto "${texto}" em caixa alta é: ${texto.toUpperCase()}`);
+  }
+}
+
+class Atividade6 {
+  constructor() {
+    let numero = 10;
+    let texto = "10";
+    console.log(
+      `variavel numero convertida para string: ${numero.toString()} e variavel texto convertida para número: ${Number(
+        texto
+      )}`
+    );
+  }
+}
+const atividade5 = new Atividade5();
+const atividade6 = new Atividade6();
