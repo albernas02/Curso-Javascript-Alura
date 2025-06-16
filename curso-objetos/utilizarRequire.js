@@ -7,5 +7,5 @@ const produto = {
     nome: "cueca",
     preco: 58.99
 }
-JSON.stringify(produto)
-console.log(produto)
+JSON.stringify(produto);
+console.log(produto);
