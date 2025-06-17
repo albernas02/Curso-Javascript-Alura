@@ -11,7 +11,7 @@ const user = {
 
 // user.exibirInfos()
 
-// const exibir = user.exibirInfos'
+// const exibir = user.exibirInfos
 // exibir()
 
 const exibir = function() {
